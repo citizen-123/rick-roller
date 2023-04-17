@@ -9,5 +9,5 @@ gif_file="file.gif"
 # use wget to download the .gif file
 wget -O "$gif_file" "$gif_url"
 
-# use xdg-open to open and play the .gif file
-xdg-open "$gif_file"
+# use powershell to open the .gif file in Windows Media Player
+powershell -Command "Start-Process 'C:\Program Files\Windows Media Player\wmplayer.exe' '$gif_file'"
